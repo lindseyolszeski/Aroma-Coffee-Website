@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Aroma Coffee</title>
+<meta name="description" content="A short, well-made menu from the Aroma Coffee van: cold brew, espresso drinks, house syrups, and a few simple breakfast bites. Greenville, SC.">
+<link rel="canonical" href="https://aromacoffeesc.com/menu">
+<meta name="theme-color" content="#F7F0E4">
+<link rel="icon" href="/images/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon-180.png">
+<meta property="og:site_name" content="Aroma Coffee">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Menu — Aroma Coffee">
+<meta property="og:description" content="A short, well-made menu from the Aroma Coffee van.">
+<meta property="og:url" content="https://aromacoffeesc.com/menu">
+<meta property="og:image" content="https://aromacoffeesc.com/images/menu-board.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Menu — Aroma Coffee">
+<meta name="twitter:description" content="A short, well-made menu from the Aroma Coffee van.">
+<meta name="twitter:image" content="https://aromacoffeesc.com/images/menu-board.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600&family=Caveat:wght@500;600;700&display=swap">
+<link rel="preload" as="image" href="/images/menu-board.jpg">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/images/wall-logo.jpg" alt="" style="border-radius:50%; object-position:35% 30%; width:40px; height:40px; object-fit:cover;">
+      <span class="nav-logo-text">Aroma<span>Coffee</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/our-story">Our Story</a>
+      <a href="/menu" class="active">Menu</a>
+      <a href="/progress">Progress</a>
+      <a href="/contact">Contact</a>
+      <a href="https://www.instagram.com/aromacoffee" target="_blank" rel="noopener" class="nav-cta">Follow Along</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile-panel" id="navMobilePanel">
+    <a href="/">Home</a>
+    <a href="/our-story">Our Story</a>
+    <a href="/menu" class="active">Menu</a>
+    <a href="/progress">Progress</a>
+    <a href="/contact">Contact</a>
+    <a href="https://www.instagram.com/aromacoffee" target="_blank" rel="noopener" class="nav-cta">Follow Along</a>
+  </div>
+</nav>
+<script>
+(function() {
+  var toggle = document.getElementById('navToggle');
+  var panel = document.getElementById('navMobilePanel');
+  if (toggle && panel) {
+    toggle.addEventListener('click', function() {
+      var isOpen = panel.classList.toggle('open');
+      toggle.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+  }
+})();
+</script>
+
+<!-- HERO -->
+<section class="hero" style="min-height:400px; background-image:url('/images/menu-board.jpg'); background-position:center 30%;">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="eyebrow">On the Menu</div>
+    <h1 class="hero-title" style="font-size:40px;">Simple, Done Well</h1>
+    <p class="hero-sub">We're keeping the menu short on purpose — a handful of drinks made right, instead of a hundred made fast.</p>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section">
+  <div class="container-narrow">
+    <div class="menu-cols">
+      <div class="menu-col">
+        <div class="menu-group">
+          <h4>Cold Brew</h4>
+          <ul>
+            <li><span>Cold Brew</span><span>12oz / 16oz</span></li>
+          </ul>
+          <p class="body-text" style="margin-top:8px; font-size:13px; color:var(--ink-soft);">Choose any two house syrups. Add a third for an extra dollar.</p>
+        </div>
+
+        <div class="menu-group">
+          <h4>House Syrups — Classics</h4>
+          <ul>
+            <li><span>Vanilla</span></li>
+            <li><span>Caramel</span></li>
+            <li><span>Hazelnut</span></li>
+            <li><span>Mocha</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-group">
+          <h4>House Syrups — Signature</h4>
+          <ul>
+            <li><span>Honey Cinnamon</span></li>
+            <li><span>Brown Sugar</span></li>
+            <li><span>Maple</span></li>
+            <li><span>Lavender</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-group">
+          <h4>Seasonal</h4>
+          <ul>
+            <li><span>Pumpkin Spice</span><span>Fall</span></li>
+            <li><span>Peppermint</span><span>Winter</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu-col">
+        <div class="menu-group">
+          <h4>Food</h4>
+          <div class="menu-item-card">
+            <img src="/images/avocado-toast.jpg" alt="Avocado toast" loading="lazy" decoding="async">
+            <div class="name">Avocado Toast</div>
+          </div>
+          <div class="menu-item-card">
+            <img src="/images/greek-yogurt-parfait.jpg" alt="Greek yogurt parfait" loading="lazy" decoding="async">
+            <div class="name">Greek Yogurt Parfait</div>
+          </div>
+          <div class="menu-item-card">
+            <img src="/images/cinnamon-rolls.jpg" alt="Cinnamon rolls" loading="lazy" decoding="async">
+            <div class="name">Cinnamon Rolls</div>
+          </div>
+          <div class="menu-item-card">
+            <img src="/images/everything-bagel.jpg" alt="Everything bagel" loading="lazy" decoding="async">
+            <div class="name">Everything Bagel</div>
+          </div>
+        </div>
+
+        <div class="menu-group">
+          <h4>Cup Sizes</h4>
+          <ul>
+            <li><span>Small</span><span>12oz</span></li>
+            <li><span>Large</span><span>16oz</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote-block" style="margin-top:56px;">
+      <p class="quote-text">"When you're starting with a van, people come for the coffee first. We just want to make sure it's worth stopping for."</p>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="section section-cream-deep section-border-top center">
+  <div class="container-narrow">
+    <h2 class="section-title">Ready to Try It?</h2>
+    <p class="body-text" style="text-align:left;">We're announcing where to find the van as stops get locked in. Follow along so you don't miss us.</p>
+    <a href="https://www.instagram.com/aromacoffee" target="_blank" rel="noopener" class="btn btn-dark" style="margin-top:8px;">Follow @aromacoffee →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" aria-label="Back to home"><img loading="lazy" decoding="async" class="footer-logo" src="/images/wall-logo.jpg" alt="Aroma Coffee home" style="border-radius:50%; object-position:35% 30%; width:74px; height:74px; object-fit:cover;"></a>
+      <div class="footer-brand-name">Aroma Coffee</div>
+      <p class="footer-tagline">Every cup has a story.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="/our-story">Our Story</a>
+      <a href="/menu">Menu</a>
+      <a href="/progress">Progress</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="mailto:hello@aromacoffeesc.com">hello@aromacoffeesc.com</a>
+      <p>Greenville, South Carolina</p>
+      <a href="https://www.instagram.com/aromacoffee" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>AROMA COFFEE &nbsp;&middot;&nbsp; EST. 2026 &nbsp;&middot;&nbsp; ALL RIGHTS RESERVED</p>
+  </div>
+</footer>
+
+<script src="/motion.js" defer></script>
+</body>
+</html>

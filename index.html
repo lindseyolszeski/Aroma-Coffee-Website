@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aroma Coffee — Every Cup Has a Story | Greenville, SC</title>
+<meta name="description" content="Aroma Coffee is a mobile coffee van bringing craft coffee and genuine conversation to Greenville, South Carolina. Every cup has a story — come tell us yours.">
+<link rel="canonical" href="https://aromacoffeesc.com/">
+<meta name="theme-color" content="#F7F0E4">
+<link rel="icon" href="/images/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon-180.png">
+<meta property="og:site_name" content="Aroma Coffee">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aroma Coffee — Every Cup Has a Story">
+<meta property="og:description" content="A mobile coffee van bringing craft coffee and genuine conversation to Greenville, South Carolina. Every cup has a story — come tell us yours.">
+<meta property="og:url" content="https://aromacoffeesc.com/">
+<meta property="og:image" content="https://aromacoffeesc.com/images/coffee-van.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aroma Coffee — Every Cup Has a Story">
+<meta name="twitter:description" content="A mobile coffee van bringing craft coffee and genuine conversation to Greenville, South Carolina.">
+<meta name="twitter:image" content="https://aromacoffeesc.com/images/coffee-van.jpg">
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "CafeOrCoffeeShop",
+ "name": "Aroma Coffee",
+ "url": "https://aromacoffeesc.com",
+ "image": "https://aromacoffeesc.com/images/coffee-van.jpg",
+ "description": "A mobile coffee van serving Greenville, South Carolina — every cup has a story.",
+ "address": { "@type": "PostalAddress", "addressLocality": "Greenville", "addressRegion": "SC", "addressCountry": "US" },
+ "sameAs": ["https://www.instagram.com/aromacoffee"]
+}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600&family=Caveat:wght@500;600;700&display=swap">
+<link rel="preload" as="image" href="/images/shop-storefront.jpg">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/images/wall-logo.jpg" alt="" style="border-radius:50%; object-position:35% 30%; width:40px; height:40px; object-fit:cover;">
+      <span class="nav-logo-text">Aroma<span>Coffee</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="/" class="active">Home</a>
+      <a href="/our-story">Our Story</a>
+      <a href="/menu">Menu</a>
+      <a href="/progress">Progress</a>
+      <a href="/contact">Contact</a>
+      <a href="https://www.instagram.com/aromacoffee" target="_blank" rel="noopener" class="nav-cta">Follow Along</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile-panel" id="navMobilePanel">
+    <a href="/" class="active">Home</a>
+    <a href="/our-story">Our Story</a>
+    <a href="/menu">Menu</a>
+    <a href="/progress">Progress</a>
+    <a href="/contact">Contact</a>
+    <a href="https://www.instagram.com/aromacoffee" target="_blank" rel="noopener" class="nav-cta">Follow Along</a>
+  </div>
+</nav>
+<script>
+(function() {
+  var toggle = document.getElementById('navToggle');
+  var panel = document.getElementById('navMobilePanel');
+  if (toggle && panel) {
+    toggle.addEventListener('click', function() {
+      var isOpen = panel.classList.toggle('open');
+      toggle.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+  }
+})();
+</script>
+
+<!-- HERO -->
+<section class="hero" style="background-image:url('/images/shop-storefront.jpg');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="eyebrow">Greenville, South Carolina</div>
+    <h1 class="hero-title">Every Cup<br>Has a Story.</h1>
+    <div class="hero-rule"></div>
+    <p class="hero-sub">Aroma Coffee is a mobile coffee van serving Greenville — built on the belief that a cup of coffee is never just a transaction. It's an invitation to a conversation. Come sit with us. We want to hear your story.</p>
+    <div class="hero-ctas">
+      <a href="/progress" class="btn btn-primary">Follow the Journey</a>
+      <a href="/menu" class="btn btn-outline">See the Menu</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true"></div>
+</section>
+
+<!-- MISSION LINE -->
+<section class="section section-tight">
+  <div class="container-narrow center">
+    <div class="quote-block">
+      <p class="quote-text">"Not a transaction. A conversation. A place to belong, to be known, and to be loved — one cup at a time."</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHERE WE ARE NOW -->
+<section class="section section-cream-deep section-border-top section-border-bottom">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Phase One</div>
+      <h2 class="section-title">We're On the Road</h2>
+      <p class="section-sub">Aroma Coffee is starting where every good story starts — small, mobile, and close to the people we're here to serve. Find our van at pop-ups and events around Greenville as we get rolling.</p>
+    </div>
+
+    <div class="img-wrap mb-md" style="border-radius:8px; overflow:hidden;">
+      <img loading="lazy" decoding="async" class="img-full" src="/images/coffee-van.jpg" alt="The Aroma Coffee mobile van" style="height:460px;">
+      <div class="img-caption">Concept rendering of the Aroma Coffee van — our home for the first phase of the journey.</div>
+    </div>
+
+    <p class="center"><a href="/progress" class="btn btn-ink-outline">See the Full Journey →</a></p>
+  </div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">What You'll Find Here</div>
+      <h2 class="section-title">Come As You Are</h2>
+      <p class="section-sub">We built Aroma around one simple hope: that the moment you walk up, something feels a little different.</p>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-title">Belong</div>
+        <p>This is a place to slow down, not just grab and go. You're not rushed here — pull up a seat, you're home.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Be Known</div>
+        <p>We want to know your name, not just your order. Our team is trained to ask, listen, and actually care.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Be Loved</div>
+        <p>Every person who walks up matters to us — intentionally, not incidentally. That's the whole point.</p>
+      </div>
+      <div class="card">
+        <div class="card-title">Your Story</div>
+        <p>Every cup has a story. We want to hear yours — and we want to grow alongside it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEASONAL / SHARE YOUR STORY BAND -->
+<div class="mission-band">
+  <img src="/images/cups-pair.jpg" alt="Two Aroma Coffee cups" loading="lazy" decoding="async" style="object-position:center 30%;">
+  <div class="mission-band-overlay">
+    <div class="eyebrow">Get Your Cup, Share Your Story</div>
+    <p class="mission-band-quote">Snap a photo with your cup, tag us, and tell us what today's story looks like.</p>
+    <a href="https://www.instagram.com/aromacoffee" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:28px;">@aromacoffee on Instagram</a>
+  </div>
+</div>
+
+<!-- WHAT'S AHEAD -->
+<section class="section section-espresso">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow light">Looking Ahead</div>
+      <h2 class="section-title light">Built for Families, Not Just Coffee Lines</h2>
+      <p class="section-sub light">Down the road, our vision is a shop where moms can actually finish a sentence — with a space for kids to play right alongside the counter. It starts with the van. It grows from there.</p>
+    </div>
+
+    <div class="cards-grid" style="max-width:760px; margin:0 auto;">
+      <div class="card" style="background:#2E2115; border-color:#3D2C1B;">
+        <div class="card-title" style="color:var(--cream);">Where to Find Us</div>
+        <p style="color:#D2C3A8;">We're announcing stops as they're locked in — farmers markets, pop-ups, and events around Greenville.</p>
+        <a href="https://www.instagram.com/aromacoffee" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:18px; display:inline-block;">Follow for Stops</a>
+      </div>
+      <div class="card" style="background:#2E2115; border-color:#3D2C1B;">
+        <div class="card-title" style="color:var(--cream);">Book the Van</div>
+        <p style="color:#D2C3A8;">Weddings, private events, and office pop-ups — we'd love to bring the van to you.</p>
+        <a href="/contact" class="btn btn-outline" style="margin-top:18px; display:inline-block;">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="section">
+  <div class="container-narrow center">
+    <p class="script-tag">Come along for the journey.</p>
+    <h2 class="section-title" style="margin-top:8px;">This Is Just the Beginning</h2>
+    <p class="body-text">Aroma Coffee is brand new — and that means you get to be part of the story from the very first page. Follow along as we build.</p>
+    <a href="/our-story" class="btn btn-dark" style="margin-top:8px;">Read Our Story →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" aria-label="Back to home"><img loading="lazy" decoding="async" class="footer-logo" src="/images/wall-logo.jpg" alt="Aroma Coffee home" style="border-radius:50%; object-position:35% 30%; width:74px; height:74px; object-fit:cover;"></a>
+      <div class="footer-brand-name">Aroma Coffee</div>
+      <p class="footer-tagline">Every cup has a story.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="/our-story">Our Story</a>
+      <a href="/menu">Menu</a>
+      <a href="/progress">Progress</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="mailto:hello@aromacoffeesc.com">hello@aromacoffeesc.com</a>
+      <p>Greenville, South Carolina</p>
+      <a href="https://www.instagram.com/aromacoffee" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>AROMA COFFEE &nbsp;&middot;&nbsp; EST. 2026 &nbsp;&middot;&nbsp; ALL RIGHTS RESERVED</p>
+  </div>
+</footer>
+
+<script src="/motion.js" defer></script>
+</body>
+</html>
