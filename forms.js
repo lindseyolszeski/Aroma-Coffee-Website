@@ -1,9 +1,10 @@
 // Wires the contact form to FormSubmit (https://formsubmit.co) — a free
 // email-relay service that needs no API key, just an inbox to deliver to.
-// IMPORTANT: swap CONTACT_EMAIL below for the real inbox before launch.
-// The first submission after that swap will land a "confirm this form"
-// email from FormSubmit — click it once to activate delivery.
-var CONTACT_EMAIL = 'hello@aromacoffeesc.com';
+// IMPORTANT: confirm CONTACT_EMAIL below is the right inbox before launch
+// (it was inferred from a conversation, not confirmed directly). The first
+// submission after any change here will land a "confirm this form" email
+// from FormSubmit — click it once to activate delivery.
+var CONTACT_EMAIL = 'aromacoffeesc@gmail.com';
 
 var contactForm = document.querySelector('form[data-contact-form]');
 if (contactForm) {
