@@ -24,7 +24,7 @@ Static website for Aroma Coffee, a mobile coffee cart serving weddings and event
 
 To make it live:
 1. The Instagram account needs to be a Business or Creator account connected to a Facebook Page.
-2. Generate a long-lived Instagram access token (via Meta's Graph API Explorer / an Instagram Basic Display or Graph API app) — this requires logging into the Instagram/Facebook account that owns `@aromacoffee`.
+2. Generate a long-lived Instagram access token (via Meta's Graph API Explorer / an Instagram Basic Display or Graph API app) — this requires logging into the Instagram/Facebook account that owns `@aroma_coffee_sc`.
 3. Add `INSTAGRAM_ACCESS_TOKEN` as an environment variable on the Vercel project (**Project → Settings → Environment Variables**).
 4. For the token to keep refreshing automatically (tokens expire every 60 days), also set `VERCEL_TOKEN`, `VERCEL_PROJECT_ID`, `VERCEL_TEAM_ID`, and `CRON_SECRET` — see `api/refresh-instagram-token.js` for what each does. `vercel.json` already schedules that function to run weekly.
 5. Until a token is set, you can preview the section's design by visiting any page with `?ig-demo` in the URL (e.g. `/?ig-demo`) — it shows placeholder tiles using existing brand photos.
@@ -34,7 +34,6 @@ To make it live:
 This site is a work-in-progress starting point, kept intentionally simple while the business is still new. A few things need real input before it's fully launch-ready:
 
 - **Trailer photo** — the site now uses new cart-style renderings (`images/coffee-cart.jpg`, `coffee-cart-back.jpg`, `coffee-cart-angle.jpg`) instead of the original van mockups. If these are AI renderings rather than an actual photo of Riley's trailer, it's still worth swapping in real photos once available so the site matches the real rig exactly.
-- **Phone number for texting** — `contact.html` currently has a `[Add phone number]` placeholder under the "Text" contact option. Fill in the real number.
 - **Contact email** — set to `aromacoffeesc@gmail.com` per the plan, but that should be double-checked against the real inbox before relying on it. It's used in `contact.html`, `forms.js` (`CONTACT_EMAIL`), and every page's footer. The contact form uses [FormSubmit](https://formsubmit.co) (free, no API key) — the first message sent after any email change triggers a one-time confirmation email from FormSubmit; click it to activate delivery.
 - **Logo** — the nav uses `images/logo-icon-ink.png` (black on transparent) and the footer uses `images/logo-icon-tan.png` (tan on transparent, for the dark background), both cropped and recolored from a clean logo graphic rather than a photo. `images/logo-lockup-ink.png` / `logo-lockup-tan.png` (icon + "AROMA COFFEE" wordmark) are also available if a larger combined mark is needed somewhere. If there's an original vector/AI file for the logo, that would still be the cleanest source if further edits are needed.
 - **Domain** — `aromacoffeesc.com` is a placeholder used in canonical URLs, Open Graph tags, `robots.txt`, and `sitemap.xml`. Once it's purchased (e.g. via GoDaddy) and connected in Vercel, this is already consistent across the site — no further find-and-replace needed as long as the purchased domain matches.

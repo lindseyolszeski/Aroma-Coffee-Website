@@ -9,7 +9,7 @@ const DEMO_IMAGES = [
 ];
 const DEMO_POSTS = DEMO_IMAGES.map((f) => ({
   image: '/images/' + f,
-  permalink: 'https://www.instagram.com/aromacoffee',
+  permalink: 'https://www.instagram.com/aroma_coffee_sc/',
   caption: 'Demo post — this tile will show a real Instagram post',
 }));
 
