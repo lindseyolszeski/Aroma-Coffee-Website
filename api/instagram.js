@@ -4,8 +4,8 @@
 // preview the section design before the account has posts/a token).
 
 const DEMO_IMAGES = [
-  'coffee-cart.jpg', 'cup-in-hand.jpg', 'barista-aprons.jpg',
-  'hanging-sign.jpg', 'cups-pair.jpg',
+  'coffee-cart.jpg', 'cup-in-hand.jpg', 'barista-pour.jpg',
+  'cart-event.jpg', 'cups-pair.jpg', 'cart-handoff.jpg',
 ];
 const DEMO_POSTS = DEMO_IMAGES.map((f) => ({
   image: '/images/' + f,
